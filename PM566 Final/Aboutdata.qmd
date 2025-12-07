@@ -28,6 +28,8 @@ The initial interactive plot of the raw (non-scaled) metrics showed that testing
 
 **reshape2:** for reshaping data to create matrix-style visualizations such as heatmaps.
 ```{r}
+#| eval: false
+#| include: false
 library(tidyverse)  
 library(lubridate) 
 
@@ -45,6 +47,8 @@ summary(covid19)
 
 
 ```{r}
+#| eval: false
+#| include: false
 covid <- covid19 %>%
   mutate(date = as_date(date))%>%
   arrange(date) %>%
